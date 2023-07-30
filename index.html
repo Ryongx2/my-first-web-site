@@ -1,0 +1,38 @@
+<!--<html>태그 위에 관용적으로 <!DOCTYPE html> 써 줌 : 이 문서는 HTML이다. 라는 뜻 (document type)-->
+<!DOCTYPE html>
+<!--최고위층 태그 : <html>-->
+<html>
+<!--HTML에 있는 모든 태그는 <head>태그 또는 <body>태그 이 둘 중에 하나 아래에 놓이게 됨. <head>태그와 <body>태그는 고위층 태그-->
+<!--본문을 설명하는, 즉 바디를 설명하는 태그는 <head>태그로 묶기로 약속 함.-->
+    <head>
+    <!--웹페이지의 제목을 나타내는 태그 : <title> (꼭 사용해야 함)-->
+    <title>WEB1 - Welcome</title>
+    
+    <!--웹브라우저에게 이 웹 페이지를 열 때는 utf-8로 문서를 읽어라고 명령하는 태그:meta (안써도 먹히는데..?)-->
+    <meta charset="utf-8">
+</head>
+
+<!--본문은 body로 묶기로 약속 함.-->
+<body>
+    <!--WEB클릭시 index.html이 나오게 함-->
+    <h1><a href="index.html">WEB</a></h1>
+    <!--목차를 표현할 때 사용하는 태그 : <li>(list)-->
+    <!--<li>태그들을 구분하기 위한 li의 부모 태그: <ul> (li와 같은 항목들은 그 항목이 어디서부터 어디까지가 서로 연관된 항목인지 경계를 짓기 위한, 그루핑을 하기 위한 부모태그가 필요)-->
+    <!--<ul>(unordered list)을 <ol>(ordered list)로 바꿀 경우 자동으로 번호 생성-->
+    <ol>
+        <!--HTML클릭시 1.html이 나오게 함. CSS->2.html, JavaScript->3.html이 나오게 함)-->
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+    </ol>
+
+    <h2>WEB</h2>
+    <p>
+        월드 와이드 웹(World Wide Web, WWW, W3)은 인터넷에 연결된 컴퓨터를 통해 사람들이 정보를 공유할 수 있는 전 세계적인 정보 공간을 말한다. 
+        간단히 웹(the Web)이라 부르는 경우가 많다. 
+        이 용어는 인터넷과 동의어로 쓰이는 경우가 많으나 엄격히 말해 서로 다른 개념이다. 웹은 전자 메일과 같이 인터넷 상에서 동작하는 하나의 서비스일 뿐이다. 
+        그러나 1993년 이래로 웹은 인터넷 구조의 절대적 위치를 차지하고 있다.
+        인터넷에서 HTTP 프로토콜, 하이퍼텍스트, HTML형식 등을 사용하여 그림과 문자를 교환하는 전송방식을 말하기도 한다.
+    </p>
+</body>
+</html>

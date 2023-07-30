@@ -1,0 +1,49 @@
+<!--<html>태그 위에 관용적으로 <!DOCTYPE html> 써 줌 : 이 문서는 HTML이다. 라는 뜻 (document type)-->
+<!DOCTYPE html>
+<!--최고위층 태그 : <html>-->
+<html>
+<!--HTML에 있는 모든 태그는 <head>태그 또는 <body>태그 이 둘 중에 하나 아래에 놓이게 됨. <head>태그와 <body>태그는 고위층 태그-->
+<!--본문을 설명하는, 즉 바디를 설명하는 태그는 <head>태그로 묶기로 약속 함.-->
+    <head>
+    <!--웹페이지의 제목을 나타내는 태그 : <title> (꼭 사용해야 함)-->
+    <title>WEB1 - HTML</title>
+    
+    <!--웹브라우저에게 이 웹 페이지를 열 때는 utf-8로 문서를 읽어라고 명령하는 태그:meta (안써도 먹히는데..?)-->
+    <meta charset="utf-8">
+</head>
+
+<!--본문은 body로 묶기로 약속 함.-->
+<body>
+    <!--WEB클릭시 index.html이 나오게 함-->
+    <h1><a href="index.html">WEB</a></h1>
+    <!--목차를 표현할 때 사용하는 태그 : <li>(list)-->
+    <!--<li>태그들을 구분하기 위한 li의 부모 태그: <ul> (li와 같은 항목들은 그 항목이 어디서부터 어디까지가 서로 연관된 항목인지 경계를 짓기 위한, 그루핑을 하기 위한 부모태그가 필요)-->
+    <!--<ul>(unordered list)을 <ol>(ordered list)로 바꿀 경우 자동으로 번호 생성-->
+    <ol>
+        <!--HTML클릭시 1.html이 나오게 함. CSS->2.html, JavaScript->3.html이 나오게 함)-->
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+    </ol>
+
+    <h2>HTML</h2>
+
+    <!--<P>태그 : paragraph(단락) tag-->
+    <!--<a>태그 : 닻(anchor의 약어). 링크 (링크를 걸고 싶은 곳에 <a>태그로 감싸서 사용. -->
+        <!--href(hypertext reference): 웹브라우저야, 이 링크는 이 값을 참조해. 새 탭으로 열게 하고 싶을 경우 target="_blank". 링크를 클릭하기 전에 무엇인지 알려 주고 싶다: 툴팁으로-> title="html5" 작성-->
+    <p><a href="https://www.w3.org/TR/html5" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> 
+        is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications. 
+    Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. 
+    HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+
+    <!--이미지를 웹페이지에 포함시킬 때 사용하는 태그 이름: <img>-->
+    <!--src: 어떤 이미지인지 알려주기로 약속된 속성(attribute). (source) 여기에 원하는 이미지의 주소를 적어 줌. -> 웹 브라우저는 여기 적혀 있는 주소를 저 위치에다가 이미지로 표현해 줌.-->
+    <img src="coding.jpg" width="100%">
+
+    <!--태그와 태그 사이의 여백 : margin (위쪽 여백 : margin-top: 45px만큼 여백)-->
+    <p style="margin-top: 45px;">HTML elements are the building blocks of HTML pages. 
+    With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. 
+    It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. 
+    HTML elements are delineated by tags, written using angle brackets.</p>
+</body>
+</html>
